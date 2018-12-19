@@ -17,21 +17,17 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    /* padding: 0px 5px 0px 5px; */
-    /* border: 2px solid red; */
 }
 
 .salutation {
     width: 80%;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 20px;
-    /* border: 2px solid white; */
 }
 
 .content {
     width: 80%;
-    font-size: 15px;
-    /* border: 2px solid wheat; */
+    font-size: 17px;
 }
 
 .link {
