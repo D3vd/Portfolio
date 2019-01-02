@@ -25,7 +25,7 @@ body {
     margin-bottom: 20px;
 }
 
-.content {
+.content, .stuff {
     width: 80%;
     font-size: 17px;
 }

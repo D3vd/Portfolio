@@ -5,7 +5,8 @@ const salutation = [
     'Konnichiwa'
 ]
 
-const html_content = "Allow me to introduce myself. My name is Dev. I'm an aspiring software developer currently enrolled in college. I enjoy writing code especially in Python and Javascript. I spend most of my time around computers so it's no suprise I ain't good at anything else. "
+const html_content = "My name is Dev. I'm an aspiring software developer currently enrolled in college. I enjoy writing code especially in Python and Javascript. I spend most of my time making stuff no one asked for and contributing to open source."
+
 
 const sal = document.querySelector('.salutation')
 const sal_class = new TextScramble(sal)
@@ -38,5 +39,5 @@ const link_fx = () => {
 // content_fx()
 
 setTimeout(salutation_fx, 1000)
-setTimeout(content_fx, 2500)
-setTimeout(link_fx, 6000)
+setTimeout(content_fx, 3000)
+setTimeout(link_fx, 8000)
