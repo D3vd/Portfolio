@@ -49,5 +49,5 @@ const link_fx = () => {
 
 setTimeout(salutation_fx, 1000)
 setTimeout(content_fx, 3000)
-setTimeout(stalk_fx, 10000)
+setTimeout(stalk_fx, 13000)
 setTimeout(link_fx, 8000)

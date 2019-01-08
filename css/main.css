@@ -34,6 +34,14 @@ body {
     margin-top: 20px;
 }
 
+.stalk a{
+    text-decoration: none;
+}
+
+.stalk a:hover{
+    text-decoration: underline;
+}
+
 .link {
     right: 0;
     padding: 20px;
@@ -54,7 +62,7 @@ a:hover {
         padding: 0px 5px 0px 5px;
     }
 
-    .content {
+    .content, .stalk{
         width: 100%;
     }
 
