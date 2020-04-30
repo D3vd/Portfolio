@@ -49,14 +49,11 @@
   border-radius: 50px;
   margin-top: 2.5rem;
   transition: transform 0.4s;
+  color: #111;
+  text-decoration: none;
 
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
-  }
-
-  a {
-    color: #111;
-    text-decoration: none;
   }
 }

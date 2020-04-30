@@ -14,10 +14,18 @@ function Navbar() {
         <Link className={styles.link} to="/" activeClassName={styles.active}>
           /Home
         </Link>
-        <Link className={styles.link} to="/projects">
+        <Link
+          className={styles.link}
+          to="/projects/"
+          activeClassName={styles.active}
+        >
           /Projects
         </Link>
-        <Link className={styles.link} to="/about">
+        <Link
+          className={styles.link}
+          to="/about/"
+          activeClassName={styles.active}
+        >
           /About
         </Link>
       </nav>

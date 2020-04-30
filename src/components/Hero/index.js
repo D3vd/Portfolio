@@ -20,9 +20,9 @@ function Hero() {
         </a>{" "}
         to see what I am upto.
       </div>
-      <div className={styles.projects}>
-        <Link to="/projects">Take a look at my Projects &rarr;</Link>
-      </div>
+      <Link to="/projects/">
+        <div className={styles.projects}>Take a look at my Projects &rarr;</div>
+      </Link>
     </div>
   )
 }
