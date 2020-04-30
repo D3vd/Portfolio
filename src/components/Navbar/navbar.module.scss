@@ -11,12 +11,14 @@
     padding: 1.5rem 2rem;
 
     .brand {
-      margin-bottom: 10px;
-      padding-left: 0;
+      // margin-bottom: 10px;
+      // padding-left: 0;
+      display: none;
     }
 
     .nav {
       padding-right: 0;
+      float: right;
     }
   }
 }
@@ -25,9 +27,10 @@
   font-size: 30px;
   font-weight: 600;
   padding-left: 2rem;
+  opacity: 0;
 
   a {
-    color: black;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -38,10 +41,10 @@
 
 .link {
   margin: 0 0.5rem 0 0;
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
 
   text-decoration: none;
-  color: black;
+  color: #fff;
 
   &:hover {
     text-decoration: line-through;
@@ -49,7 +52,7 @@
 }
 
 .active {
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid #fff;
   font-weight: 500;
 
   &:hover {

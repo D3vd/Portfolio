@@ -12,13 +12,13 @@ function Navbar() {
 
       <nav className={styles.nav}>
         <Link className={styles.link} to="/" activeClassName={styles.active}>
-          Home
+          /Home
         </Link>
         <Link className={styles.link} to="/projects">
-          Projects
+          /Projects
         </Link>
         <Link className={styles.link} to="/about">
-          About
+          /About
         </Link>
       </nav>
     </header>

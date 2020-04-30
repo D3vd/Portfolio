@@ -1,0 +1,62 @@
+.container {
+  color: #fff;
+  margin-top: 10vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .salutation {
+    font-size: 5rem;
+  }
+
+  .introduction {
+    font-size: 2rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: line-through;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 5vh;
+
+    .salutation {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .introduction {
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+
+    .projects {
+      font-size: 1rem;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.projects {
+  background-color: #fff;
+  float: right;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  margin-top: 2.5rem;
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  a {
+    color: #111;
+    text-decoration: none;
+  }
+}
