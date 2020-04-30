@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <header className={styles.container}>
       <div className={styles.brand}>
-        <Link to="/">Dev Daksan</Link>
+        <Link to="/">{"<Dev />"}</Link>
       </div>
 
       <nav className={styles.nav}>

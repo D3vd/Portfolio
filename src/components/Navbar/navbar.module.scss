@@ -11,23 +11,23 @@
     padding: 1.5rem 2rem;
 
     .brand {
-      // margin-bottom: 10px;
-      // padding-left: 0;
-      display: none;
+      margin-bottom: 1.2rem;
+      padding-left: 0;
+      // display: none;
     }
 
     .nav {
       padding-right: 0;
-      float: right;
+      // float: right;
     }
   }
 }
 
 .brand {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
   padding-left: 2rem;
-  opacity: 0;
+  // opacity: 0;
 
   a {
     color: #fff;
@@ -53,7 +53,7 @@
 
 .active {
   border-bottom: 2px solid #fff;
-  font-weight: 500;
+  font-weight: 600;
 
   &:hover {
     text-decoration: none;
