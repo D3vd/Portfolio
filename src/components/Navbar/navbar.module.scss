@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  padding: 2rem 5.625rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    display: block;
+    padding: 1.5rem 2rem;
+
+    .brand {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: 600;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.link {
+  margin: 0 0.5rem 0 0;
+  padding: 0.25rem;
+
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #222;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+}

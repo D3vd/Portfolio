@@ -1,6 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
+import Navbar from "../Navbar"
+
 import useSiteMetadata from "../../hooks/use-sitemetadata"
 
 import "./global.scss"
@@ -17,7 +19,8 @@ function layout({ children }) {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Helmet>
-      <main>{children}</main>
+      <Navbar />
+      <main id="main">{children}</main>
     </>
   )
 }

@@ -1,4 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body,
+html {
+  font-family: "Work Sans";
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+
+  > div {
+    margin-top: 0;
+  }
+}
+
+#main {
+  padding-top: 100px;
+
+  @media (max-width: 768px) {
+    padding-top: 150px;
+  }
 }
