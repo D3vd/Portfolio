@@ -1,11 +1,12 @@
 import React from "react"
 
+import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 
 function index() {
   return (
     <Layout>
-      <h1>Hello World!</h1>
+      <Hero />
     </Layout>
   )
 }

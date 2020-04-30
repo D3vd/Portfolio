@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  padding: 2rem 5.625rem;
+  padding: 2rem calc((100vw - 1200px - 0.5rem) / 2);
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -12,6 +12,11 @@
 
     .brand {
       margin-bottom: 10px;
+      padding-left: 0;
+    }
+
+    .nav {
+      padding-right: 0;
     }
   }
 }
@@ -19,11 +24,16 @@
 .brand {
   font-size: 30px;
   font-weight: 600;
+  padding-left: 2rem;
 
   a {
     color: black;
     text-decoration: none;
   }
+}
+
+.nav {
+  padding-right: 2rem;
 }
 
 .link {
