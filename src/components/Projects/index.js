@@ -1,5 +1,7 @@
 import React from "react"
 
+import Project from "./project"
+
 import useProject from "../../hooks/use-projects"
 
 import styles from "./projects.module.scss"
@@ -11,7 +13,9 @@ function Projects() {
     <div className={styles.container}>
       <h1 className={styles.heading}>Projects</h1>
       <div className={styles.projects}>
-        <h1>{projects.length}</h1>
+        {projects.map((project, index) => (
+          <Project key={index} project={project} />
+        ))}
       </div>
     </div>
   )
