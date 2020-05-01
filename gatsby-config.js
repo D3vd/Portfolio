@@ -3,11 +3,13 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "projects",
-        path: "content/Projects",
+        path: "content/projects",
       },
     },
   ],

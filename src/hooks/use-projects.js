@@ -5,6 +5,7 @@ const useProjects = () => {
     query {
       projects: allMdx(
         sort: { fields: [frontmatter___priority], order: DESC }
+        filter: { fileAbsolutePath: { regex: "/projects/" } }
       ) {
         nodes {
           excerpt
@@ -12,6 +13,13 @@ const useProjects = () => {
             time
             title
             priority
+            image {
+              sharp: childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
         }
       }
@@ -21,7 +29,7 @@ const useProjects = () => {
   return data.projects.nodes.map(project => ({
     title: project.frontmatter.title,
     time: project.frontmatter.time,
-    content: project.excerpt,
+    image: project.frontmatter.image.sharp.fluid,
   }))
 }
 
