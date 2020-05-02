@@ -11,7 +11,7 @@ function Icons({ tech }) {
         icon !== "" ? (
           <img
             key={icon}
-            src={require(`../../images/icons/${icon}.svg`)}
+            src={require(`../../images/languages/${icon}.svg`)}
             alt={icon}
             className={styles.icon}
           />

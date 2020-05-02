@@ -20,7 +20,7 @@
   margin: 3rem 1rem;
 
   .details {
-    flex-basis: 70%;
+    flex-basis: 60%;
     color: #fff;
     padding: 0rem 2rem;
 
@@ -30,8 +30,34 @@
   }
 
   .image {
-    flex-basis: 30%;
-    height: 10rem;
+    flex-basis: 40%;
+    min-height: 13rem;
+  }
+
+  .last {
+    display: flex;
+    justify-content: space-between;
+
+    .time {
+      line-height: 1.5rem;
+    }
+
+    .link {
+      float: right;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 1rem;
+        border: 1px solid #fff;
+        padding: 0.2rem 1rem;
+        border-radius: 2rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 
   @media (max-width: 1000px) {

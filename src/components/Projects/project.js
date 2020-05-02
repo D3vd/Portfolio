@@ -6,7 +6,7 @@ import styles from "./projects.module.scss"
 import Icons from "./icons"
 
 function Project({ project }) {
-  const { title, image, description, tech } = project
+  const { title, image, description, tech, live, code, time } = project
 
   return (
     <div className={styles.project}>
@@ -16,6 +16,25 @@ function Project({ project }) {
         <p>{description}</p>
         <div className={styles.tech}>
           {tech !== null ? <Icons tech={tech} /> : ""}
+        </div>
+        <div className={styles.last}>
+          <div className={styles.time}>{time}</div>
+          <div className={styles.link}>
+            {live !== null ? (
+              <a href={live} target="_blank" rel="noopener noreferrer">
+                Live
+              </a>
+            ) : (
+              ""
+            )}
+            {code !== null ? (
+              <a href={code} target="_blank" rel="noopener noreferrer">
+                Code
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
         </div>
       </div>
     </div>
