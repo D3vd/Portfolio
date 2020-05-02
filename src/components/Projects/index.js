@@ -14,7 +14,7 @@ function Projects() {
       <h1 className={styles.heading}>Projects</h1>
       <div className={styles.projects}>
         {projects.map((project, index) => (
-          <Project key={index} project={project} />
+          <Project key={index} project={project} index={index} />
         ))}
       </div>
     </div>
