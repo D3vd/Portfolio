@@ -30,17 +30,18 @@
     margin-top: 5vh;
 
     .salutation {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     .introduction {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: justify;
     }
 
     .projects {
-      font-size: 1rem;
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
       margin-top: 2.5rem;
     }
   }
@@ -56,6 +57,7 @@
   transition: transform 0.4s;
   color: #111;
   text-decoration: none;
+  margin-bottom: 2rem;
 
   &:hover {
     transform: scale(1.1);
