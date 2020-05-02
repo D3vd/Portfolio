@@ -1,6 +1,7 @@
 import React from "react"
 
 import Project from "./project"
+import Footer from "../Footer"
 
 import useProject from "../../hooks/use-projects"
 
@@ -17,6 +18,7 @@ function Projects() {
           <Project key={index} project={project} index={index} />
         ))}
       </div>
+      <Footer />
     </div>
   )
 }

@@ -9,7 +9,7 @@ function Hero() {
       <div className={styles.salutation}>Hello!</div>
       <div className={styles.introduction}>
         My name is Dev. I am a web developer curious about everything the web as
-        to offer. I spend most of my time working on stuff no one asked for and
+        to offer. I spend most of my free time making stuff no one asked for and
         contributing to OpenSource. Check out my{" "}
         <a
           href="https://github.com/R3l3ntl3ss"
