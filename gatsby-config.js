@@ -12,12 +12,19 @@ module.exports = {
         path: "content/projects",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
+        head: true,
+      },
+    },
   ],
 
   siteMetadata: {
     title: "Dev Daksan",
     description:
-      "Hey, my name is Dev. I am an aspiring software engineer. I spend most of my free time contributing to open source and making stuff that no one asked for.",
+      "Hey, my name is Dev Daksan P S. I am an aspiring software engineer. I spend most of my free time contributing to open source and making stuff that no one asked for.",
     keywords:
       "full stack developer, frontend developer, portfolio, personal website",
   },
