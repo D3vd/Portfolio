@@ -21,13 +21,6 @@ function Navbar() {
         >
           /Projects
         </Link>
-        <Link
-          className={styles.link}
-          to="/about/"
-          activeClassName={styles.active}
-        >
-          /About
-        </Link>
       </nav>
     </header>
   )

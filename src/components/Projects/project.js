@@ -4,12 +4,15 @@ import Image from "gatsby-image"
 import styles from "./projects.module.scss"
 
 function Project({ project }) {
-  const { title, image } = project
+  const { title, image, description } = project
 
   return (
     <div className={styles.project}>
-      <Image fluid={image} alt={title} />
-      <h1>{title}</h1>
+      <Image className={styles.image} fluid={image} alt={title} />
+      <div className={styles.details}>
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
     </div>
   )
 }

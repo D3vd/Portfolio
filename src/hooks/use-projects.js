@@ -13,6 +13,7 @@ const useProjects = () => {
             time
             title
             priority
+            description
             image {
               sharp: childImageSharp {
                 fluid {
@@ -30,6 +31,7 @@ const useProjects = () => {
     title: project.frontmatter.title,
     time: project.frontmatter.time,
     image: project.frontmatter.image.sharp.fluid,
+    description: project.frontmatter.description,
   }))
 }
 
