@@ -27,6 +27,10 @@
     h1 {
       margin: 0;
     }
+
+    p {
+      min-height: 2.1rem;
+    }
   }
 
   .image {
@@ -40,6 +44,7 @@
 
     .time {
       line-height: 1.5rem;
+      font-weight: 600;
     }
 
     .link {
@@ -60,8 +65,13 @@
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     display: block;
+    margin: 1rem;
+
+    .details {
+      padding: 2rem 0;
+    }
   }
 }
 
