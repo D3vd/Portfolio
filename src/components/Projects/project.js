@@ -3,8 +3,10 @@ import Image from "gatsby-image"
 
 import styles from "./projects.module.scss"
 
+import Icons from "./icons"
+
 function Project({ project }) {
-  const { title, image, description } = project
+  const { title, image, description, tech } = project
 
   return (
     <div className={styles.project}>
@@ -12,6 +14,9 @@ function Project({ project }) {
       <div className={styles.details}>
         <h1>{title}</h1>
         <p>{description}</p>
+        <div className={styles.tech}>
+          {tech !== null ? <Icons tech={tech} /> : ""}
+        </div>
       </div>
     </div>
   )
