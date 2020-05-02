@@ -1,14 +1,14 @@
 import React from "react"
 
-import Hero from "../components/Hero"
 import Layout from "../components/Layout"
+import Projects from "../components/Projects"
 
-function index() {
+function projects() {
   return (
     <Layout>
-      <Hero />
+      <Projects />
     </Layout>
   )
 }
 
-export default index
+export default projects

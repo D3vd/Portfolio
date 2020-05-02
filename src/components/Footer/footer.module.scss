@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem calc((100vw - 1200px - 0.5rem) / 2);
+
+  color: #fff;
+  font-weight: 500;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
+}
