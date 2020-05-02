@@ -5,11 +5,13 @@ import styles from "./projects.module.scss"
 
 import Icons from "./icons"
 
-function Project({ project }) {
+function Project({ project, index }) {
   const { title, image, description, tech, live, code, time } = project
 
   return (
-    <div className={styles.project}>
+    <div
+      className={`${styles.project} ${index % 2 !== 0 ? styles.reverse : ""}`}
+    >
       <Image className={styles.image} fluid={image} alt={title} />
       <div className={styles.details}>
         <h1>{title}</h1>

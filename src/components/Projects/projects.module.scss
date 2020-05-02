@@ -13,11 +13,20 @@
 
 .projects {
   padding: 3rem calc((100vw - 1200px - 0.5rem) / 2);
+  padding-top: 1rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .project {
   display: flex;
-  margin: 3rem 1rem;
+  margin: 5rem 1rem;
 
   .details {
     flex-basis: 60%;
