@@ -1,5 +1,18 @@
 module.exports = {
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: "content/projects",
+      },
+    },
+  ],
 
   siteMetadata: {
     title: "Dev Daksan",

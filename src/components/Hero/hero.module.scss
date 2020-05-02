@@ -1,8 +1,8 @@
 .container {
   color: #fff;
   margin-top: 12vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: calc((100vw - 1200px - 0.5rem) / 2);
+  padding-left: calc((100vw - 1200px - 0.5rem) / 2);
 
   .salutation {
     font-size: 5rem;
@@ -19,6 +19,11 @@
     a:hover {
       text-decoration: line-through;
     }
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   @media (max-width: 768px) {

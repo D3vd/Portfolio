@@ -21,8 +21,6 @@ html {
 #main {
   padding-top: 100px;
   min-height: 100vh;
-  padding-right: calc((100vw - 1200px - 0.5rem) / 2);
-  padding-left: calc((100vw - 1200px - 0.5rem) / 2);
 
   @media (max-width: 768px) {
     padding-top: 150px;
