@@ -1,10 +1,13 @@
 .container {
   display: flex;
-  padding: 2rem calc((100vw - 1200px - 0.5rem) / 2);
+  padding: 1.5rem calc((100vw - 1200px - 0.5rem) / 2);
   justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
+  background-color: #111111aa;
+  backdrop-filter: blur(1rem);
 
   @media (max-width: 768px) {
     display: block;
@@ -13,12 +16,10 @@
     .brand {
       margin-bottom: 1.2rem;
       padding-left: 0;
-      // display: none;
     }
 
     .nav {
       padding-right: 0;
-      // float: right;
     }
   }
 }
@@ -37,6 +38,7 @@
 
 .nav {
   padding-right: 2rem;
+  line-height: 2rem;
 }
 
 .link {
